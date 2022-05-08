@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/album_menu_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/my_style_mix_cv"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#E6E6E6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/my_style_mix_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="3dp">
+
+                <TextView
+                    android:id="@+id/album_my_style_mix_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내 취향 MIX"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/album_mix_off_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/btn_toggle_off"
+                    app:layout_constraintStart_toEndOf="@+id/album_my_style_mix_tv"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/album_mix_on_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/btn_toggle_on"
+                    app:layout_constraintStart_toEndOf="@+id/album_my_style_mix_tv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/album_select_off_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/btn_playlist_select_off"
+            app:layout_constraintTop_toBottomOf="@+id/my_style_mix_cv"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/album_select_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="전체선택"
+            app:layout_constraintStart_toEndOf="@id/album_select_off_iv"
+            app:layout_constraintTop_toBottomOf="@+id/my_style_mix_cv"/>
+
+        <ImageView
+            android:id="@+id/album_select_on_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_playlist_select_on"
+            app:layout_constraintTop_toBottomOf="@+id/my_style_mix_cv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/album_unselect_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="선택해제"
+            android:textColor="@color/flo"
+            app:layout_constraintStart_toEndOf="@id/album_select_on_iv"
+            app:layout_constraintTop_toBottomOf="@+id/my_style_mix_cv"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/album_play_all_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_browse_arrow_right"
+            app:layout_constraintTop_toBottomOf="@+id/my_style_mix_cv"
+            app:layout_constraintEnd_toStartOf="@+id/album_play_all_tv"/>
+
+        <TextView
+            android:id="@+id/album_play_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:text="전체듣기"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_style_mix_cv"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/album_song_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album_menu_cl"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

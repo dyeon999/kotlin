@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/latest_order_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="최신순"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/latest_order_tv"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mv_coin_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/video_mv_coin_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="209dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/mv_coin" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/coin_mv_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="[MV] Coin"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/mv_coin_cv"
+                app:layout_constraintStart_toStartOf="@+id/mv_coin_cv"/>
+
+            <TextView
+                android:id="@+id/coin_mv_singer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이유 (IU) | 2021.03.26"
+                android:textColor="@color/gray_color"
+                app:layout_constraintTop_toBottomOf="@+id/coin_mv_tv"
+                app:layout_constraintStart_toStartOf="@+id/coin_mv_tv"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mv_lilac_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coin_mv_singer_tv">
+
+                <ImageView
+                    android:id="@+id/video_mv_lilac_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="209dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/mv_lilac" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/lilac_mv_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="[MV] 라일락 (LILAC)"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/mv_lilac_cv"
+                app:layout_constraintStart_toStartOf="@+id/mv_lilac_cv"/>
+
+            <TextView
+                android:id="@+id/lilac_mv_singer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이유 (IU) | 2021.03.25"
+                android:textColor="@color/gray_color"
+                app:layout_constraintTop_toBottomOf="@+id/lilac_mv_tv"
+                app:layout_constraintStart_toStartOf="@+id/lilac_mv_tv"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/teaser_lilac_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lilac_mv_singer_tv">
+
+                <ImageView
+                    android:id="@+id/video_teaser_lilac_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="209dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/teaser_lilac" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/lilac_teaser_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="[티저] 라일락 (LILAC)"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/teaser_lilac_cv"
+                app:layout_constraintStart_toStartOf="@+id/teaser_lilac_cv"/>
+
+            <TextView
+                android:id="@+id/lilac_teaser_singer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이유 (IU) | 2021.03.24"
+                android:textColor="@color/gray_color"
+                app:layout_constraintTop_toBottomOf="@+id/lilac_teaser_tv"
+                app:layout_constraintStart_toStartOf="@+id/lilac_teaser_tv"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/teaser_coin_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lilac_teaser_singer_tv">
+
+                <ImageView
+                    android:id="@+id/video_teaser_coin_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="209dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/teaser_coin" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/coin_teaser_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="[티저] Coin"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/teaser_coin_cv"
+                app:layout_constraintStart_toStartOf="@+id/teaser_coin_cv"/>
+
+            <TextView
+                android:id="@+id/coin_teaser_singer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이유 (IU) | 2021.03.23"
+                android:textColor="@color/gray_color"
+                app:layout_constraintTop_toBottomOf="@+id/coin_teaser_tv"
+                app:layout_constraintStart_toStartOf="@+id/coin_teaser_tv"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
