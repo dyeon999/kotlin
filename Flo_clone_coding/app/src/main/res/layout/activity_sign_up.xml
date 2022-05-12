@@ -17,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+
     <EditText
         android:id="@+id/sign_up_id_et"
         android:layout_width="0dp"
@@ -31,6 +32,7 @@
         app:layout_constraintEnd_toStartOf="@+id/sign_up_at_sign_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_up_sign_up_tv"/>
+
 
     <View
         android:id="@+id/sign_up_id_underscore_view"
@@ -53,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/sign_up_id_et"
         app:layout_constraintEnd_toEndOf="@+id/sign_up_sign_up_tv"
         app:layout_constraintStart_toStartOf="@+id/sign_up_sign_up_tv"
-        app:layout_constraintTop_toTopOf="@+id/sign_up_id_et"/>
+        app:layout_constraintTop_toTopOf="@+id/sign_up_id_et" />
 
     <EditText
         android:id="@+id/sign_up_direct_input_et"
@@ -68,7 +70,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/sign_up_id_et"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sign_up_at_sign_tv"
-        app:layout_constraintTop_toTopOf="@+id/sign_up_at_sign_tv"/>
+        app:layout_constraintTop_toTopOf="@+id/sign_up_at_sign_tv" />
 
     <View
         android:id="@+id/sign_up_address_underscore_view"
@@ -88,7 +90,7 @@
         android:src="@drawable/nugu_btn_down"
         app:layout_constraintBottom_toBottomOf="@+id/sign_up_direct_input_et"
         app:layout_constraintEnd_toEndOf="@+id/sign_up_direct_input_et"
-        app:layout_constraintTop_toTopOf="@+id/sign_up_direct_input_et"/>
+        app:layout_constraintTop_toTopOf="@+id/sign_up_direct_input_et" />
 
     <TextView
         android:id="@+id/sign_up_email_error_tv"
@@ -139,7 +141,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_id_et"/>
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_id_et" />
 
     <View
         android:id="@+id/sign_up_password_underscore_view"
@@ -159,7 +161,7 @@
         android:src="@drawable/btn_input_password"
         app:layout_constraintBottom_toBottomOf="@+id/sign_up_password_et"
         app:layout_constraintEnd_toEndOf="@+id/sign_up_password_et"
-        app:layout_constraintTop_toTopOf="@+id/sign_up_password_et"/>
+        app:layout_constraintTop_toTopOf="@+id/sign_up_password_et" />
 
     <EditText
         android:id="@+id/sign_up_password_check_et"
@@ -174,7 +176,8 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_password_underscore_view"/>
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_password_underscore_view" />
+
 
     <View
         android:id="@+id/sign_up_password_check_underscore_view"
@@ -194,7 +197,7 @@
         android:src="@drawable/btn_input_password"
         app:layout_constraintBottom_toBottomOf="@+id/sign_up_password_check_et"
         app:layout_constraintEnd_toEndOf="@+id/sign_up_password_check_et"
-        app:layout_constraintTop_toTopOf="@+id/sign_up_password_check_et"/>
+        app:layout_constraintTop_toTopOf="@+id/sign_up_password_check_et" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign_up_sign_up_btn"
@@ -206,7 +209,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
         android:id="@+id/sign_up_loading_pb"
