@@ -15,7 +15,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
     <EditText
         android:id="@+id/sign_up_id_et"
@@ -30,7 +31,8 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/sign_up_at_sign_tv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_sign_up_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_sign_up_tv"/>
+
 
     <View
         android:id="@+id/sign_up_id_underscore_view"
@@ -175,6 +177,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_up_password_underscore_view" />
+
 
     <View
         android:id="@+id/sign_up_password_check_underscore_view"
